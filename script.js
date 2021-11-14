@@ -9,11 +9,11 @@ var weather = document.querySelector('.desc');
 var wind = document.querySelector('.wind');
 var button = document.querySelector('.submit');
 
-input.addEventListener('keypress', function (e) {
-    if (e.keyCode == 13) {
-        button.click();
-    }
-})
+// input.addEventListener('keypress', function (e) {
+//     if (e.keyCode == 13) {
+//         button.click();
+//     }
+// })
 
 button.addEventListener('click', function (Cityname) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=08a8aefda2a75b43cc9f4b86b88ebab5&units=metric`)
