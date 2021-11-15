@@ -75,5 +75,10 @@ button.addEventListener('click', function (Cityname) {
 
         })
 
-        .catch(err => cityname.innerHTML = "No data found!!");//alert("Sorry We don't have data for you city!"));
+        .catch(err => cityname.innerHTML = "No data found!!",
+            countryname.innerHTML = "",
+            temp.innerHTML = "",
+            hum.innerHTML = "",
+            wind.innerHTML = "",
+            weather.innerHTML = "");//alert("Sorry We don't have data for you city!"));
 })
